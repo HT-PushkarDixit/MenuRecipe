@@ -15,6 +15,11 @@ goto(`/recipes/${val}`)
 </script>
 
 <main>
+
+<button on:click={()=>{goto('/')}} style="background-color: #ff9500;">Back &lt;--</button>
+
+
+
 <h1>Select Your Food </h1>
 
 
@@ -31,7 +36,7 @@ goto(`/recipes/${val}`)
 
     </select>
 
-<button on:click={goGetit}>Give</button>
+<button on:click={goGetit} class="give">Give</button>
 
 
 
@@ -54,8 +59,19 @@ goto(`/recipes/${val}`)
         font-size: 1.5rem;
     }
     button{
-        font-size: 1.5rem;
+    font-size: 1.5rem;
+	width: 10%;
+	height: 10%;
+	padding: 1% 0;
+	border: 1px solid black;
+	border-radius: 50px;
+	font-weight: bolder;
     }
+    .give{
+        position: relative;
+        left: 50%;
+    }
+
 
     div{
         background-color: white;
